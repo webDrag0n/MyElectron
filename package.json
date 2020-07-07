@@ -1,0 +1,15 @@
+{
+  "name": "myelectron",
+  "version": "1.0.0",
+  "description": "my first electron based application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test"
+  },
+  "author": "webDrag0n",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.1.0"
+  }
+}
