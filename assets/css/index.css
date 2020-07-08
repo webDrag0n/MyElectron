@@ -1,0 +1,51 @@
+
+
+.button {
+    align-self: flex-start;
+    margin-right: 1em;
+    border: 2px solid;
+    border-radius: 4px;
+    font: inherit;
+    font-size: 1.2em;
+    padding: .4em 1.2em;
+    color: #eeeeee;
+    background-color: #ff3300;
+}
+.button:focus {
+    outline: none;
+    background-color: #ff3300;
+}
+.button:active {
+    border-color: var(--color-border);
+}
+
+.button:hover {
+    background-color: #eeeeee;
+    color: #000000;
+}
+  
+.button:before,
+.button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 50%;
+    background-color: #ff3300;
+    transition: transform .2s cubic-bezier(.4,.1,0,1);
+}
+.button:before {
+    top: 0;
+    transform-origin: bottom center;
+    transform: translateX(.7em) rotate(-30deg) scale(.75);
+}
+.button:after {
+    bottom: 0;
+    transform-origin: top center;
+    transform: translateX(.7em) rotate(30deg) scale(.75);
+}
+.button:focus:before,
+.button:focus:after {
+    background-color: currentColor;
+}
+  
