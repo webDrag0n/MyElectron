@@ -41,3 +41,12 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+
+
+const {ipcMain} = require('electron'); // include the ipc module to communicate with render process ie to receive the message from render process
+ 
+//ipcMain.on will receive the “btnclick” info from renderprocess 
+ipcMain.on("btnclick",function (event, arg) {
+    event.sender.send("btnclick-task-finished", arg); 
+});
