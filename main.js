@@ -48,5 +48,5 @@ const {ipcMain} = require('electron'); // include the ipc module to communicate 
  
 //ipcMain.on will receive the “btnclick” info from renderprocess 
 ipcMain.on("btnclick",function (event, arg) {
-    event.sender.send("btnclick-task-finished", arg); 
+    event.sender.send("btnclick-task-finished", arg);
 });

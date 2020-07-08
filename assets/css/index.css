@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Code Pro'), local('SourceCodePro'), url(fonts/SourceCodePro-Regular.ttf) format('truetype');
+}
+
+* {
+    font-family: 'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2em;
+}
+
+
 .button {
     align-self: flex-start;
     margin-right: 1em;
